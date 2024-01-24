@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      Name:
+      <input type="text" autocomplete="off" required pattern="" /><br />
+      Email: <input type="email" name="" id="" required /> <br />
+      Password:
+      <input type="password" name="" id="" required /><br />
+      gender:
+      <label for="female-radio" form="">Female</label>
+      <input type="radio" name="gender" id="female-radio" checked />
+      <label for="male-radio">Male</label>
+      <input type="radio" name="gender" id="male-radio" /><br />
+      Hobby:
+      <label for="coding-chk">Coding</label>
+      <input type="checkbox" id="coding-chk" />
+      <label for="designing-chk">Designing</label>
+      <input type="checkbox" id="designing-chk" />
+      <label for="cricket-chk">cricket</label>
+      <input type="checkbox" id="cricket-chk" /><br />
+      <input type="text" name="" list="course-list" />
+      <datalist id="course-list" name="courses-list">
+        <option value="WD">WD</option>
+        <option value="Front end">Front end</option>
+        <option value="full stack">full stack</option>
+      </datalist>
+      <br />
+      <select name="" id="" autocomplete="off">
+        <option value="" disabled>Rajkot</option>
+        <option value="" selected>Baorda</option>
+        <option value="">Ahmedabad</option>
+      </select>
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="20"
+        rows="5"
+        placeholder="Enter your adderss"
+        autocomplete="off"
+        required
+        readonly
+      ></textarea>
+      <input type="reset" name="" id="" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
