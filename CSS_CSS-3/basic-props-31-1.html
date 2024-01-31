@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        color: yellowgreen;
+        background-color: whitesmoke;
+        border: 1px solid mediumorchid;
+        font-size: 32px;
+        font-weight: 600;
+      } */
+      .parent {
+        height: 300px;
+        width: 80%;
+        background-color: aquamarine;
+        color: greenyellow;
+      }
+      .child {
+        height: 100px;
+        background-color: brown;
+        border: 3px solid black;
+      }
+
+      .child1 {
+        width: 80%;
+        /* width: 80px; */
+      }
+      .child2 {
+        width: 60%;
+        /* width: 60px; */
+      }
+      .child3 {
+        width: 30%;
+        /* width: 30px; */
+      }
+      .grand-grand-child {
+        /* color: whitesmoke; */
+      }
+
+      .child1 {
+        width: 20%;
+      }
+      .child1 {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1"></div>
+      <div class="child child2"></div>
+      <div class="child child3">
+        <div class="grand-child">something else</div>
+        <div class="grand-child"></div>
+        <div class="grand-child">
+          <div class="grand-grand-child">other</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
