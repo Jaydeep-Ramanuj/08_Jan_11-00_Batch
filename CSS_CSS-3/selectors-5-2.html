@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div,
+      p {
+        color: red;
+        border: 1px solid red;
+        height: 20px;
+      }
+      .parent {
+        height: 200px;
+        background-color: rgba(127, 255, 212, 0.463);
+        /* overflow: hidden; */
+      }
+
+      div.child {
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>This first p tag is inside div tag</p>
+      <div class="child">
+        <div class="child">
+          <p>This second p tag is inside div tag</p>
+        </div>
+        <span>This is span tag</span>
+      </div>
+    </div>
+    <p>This is p tag is outside div tag</p>
+  </body>
+</html>
