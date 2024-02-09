@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        border: 1px solid blue;
+        margin: 50px auto;
+        transition: all 300ms;
+      }
+      /* .box:hover {
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      } */
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 600ms;
+      }
+      img:hover {
+        /* filter: brightness(40%); */
+        /* filter: blur(1px); */
+        /* filter: contrast(150%); */
+        /* filter: grayscale(100%); */
+        /* filter: invert(); */
+        /* filter: saturate(150%); */
+        filter: sepia(80%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img
+        src="https://images.pexels.com/photos/6747386/pexels-photo-6747386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
