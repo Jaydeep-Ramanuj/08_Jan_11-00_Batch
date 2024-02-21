@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --red-color: rgb(65, 231, 162);
+        --card-height: 120px;
+      }
+      p {
+        color: aqua;
+        height: var(--card-height);
+      }
+      i {
+        color: brown;
+      }
+      div:nth-of-type(1) {
+        color: var(--red-color);
+      }
+      div:nth-of-type(2) {
+        color: yellow;
+      }
+      div:nth-of-type(3) {
+        color: yellowgreen;
+        height: var(--card-height);
+      }
+      div:nth-of-type(4) {
+        color: var(--red-color);
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <i>This is i tag</i>
+    <div>This is first div tag</div>
+    <div>This is second div tag</div>
+    <div>This is third div tag</div>
+    <div>This is fourth div tag</div>
+  </body>
+</html>
