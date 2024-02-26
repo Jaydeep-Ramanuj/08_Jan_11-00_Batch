@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loading-bar {
+        padding: 5px;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: flex;
+        gap: 2px;
+        margin: 50px;
+      }
+      .small-box {
+        height: 8px;
+        width: 8px;
+        background-image: linear-gradient(to top, blue, whitesmoke);
+        border-radius: 1px;
+        /* transition: all 600ms; */
+        animation-name: loading;
+        animation-duration: 1000ms;
+        animation-delay: 100ms;
+        /* animation-direction: reverse; */
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+      }
+
+      .loading-bar:hover .small-box {
+      }
+
+      @keyframes loading {
+        /* from {
+          transform: translateX(-50px);
+        }
+        to {
+            transform: translateX(260px);
+        } */
+
+        0% {
+          transform: translateX(-50px);
+        }
+        50% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateX(260px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-bar">
+      <div class="small-box"></div>
+      <div class="small-box"></div>
+      <div class="small-box"></div>
+    </div>
+  </body>
+</html>

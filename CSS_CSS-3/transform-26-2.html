@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        margin: 50px auto;
+        /* border-radius: 12px; */
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        overflow: hidden;
+        transition: all 300ms;
+        transform: skew(10deg, 20deg);
+      }
+      .box:hover img {
+        /* transform: scale(1.08); */
+        /* transform: scaleX(0.8); */
+        /* transform: scaleY(1.2); */
+
+        /* transform: translateX(-50px); */
+        /* transform: translateY(50px); */
+        /* transform: translate(50px, 20px); */
+
+        /* transform: rotateY(45deg); */
+        /* transform: rotateX(45deg); */
+        /* transform: rotateX(45deg); */
+        /* transform: perspective(400px) rotateX(45deg); */
+
+        /* perspective: 400; */
+      }
+
+      .box:hover {
+        /* transform: skewX(-20deg); */
+        /* transform: skewY(20deg); */
+        transform: skew(20deg, 30deg);
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 300ms;
+
+        /* border-radius: 12px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <!-- <img
+        src="https://images.pexels.com/photos/20025771/pexels-photo-20025771/free-photo-of-people-and-pattern-story.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>
