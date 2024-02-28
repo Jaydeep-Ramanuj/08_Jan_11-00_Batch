@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        margin: 50px auto;
+        width: min-content;
+        position: relative;
+      }
+      .badge,
+      .spam {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 2.2rem;
+        font-weight: 600;
+        background-color: rgba(255, 0, 0, 0.746);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        position: absolute;
+        top: -5px;
+        right: 20px;
+      }
+      .badge {
+        z-index: 1;
+      }
+      .spam {
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img
+        src="images/e4dbb8e240d50cf30bab73b272a3760b-removebg-preview.png"
+        alt=""
+      />
+      <div class="badge">5</div>
+      <div class="spam">spam</div>
+    </div>
+  </body>
+</html>

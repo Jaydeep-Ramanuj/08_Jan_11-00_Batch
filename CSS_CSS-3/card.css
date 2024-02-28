@@ -22,6 +22,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transition: all 300ms;
+  position: relative;
 }
 
 .card-info {
@@ -136,4 +137,15 @@ img:hover {
 .card:hover .card-info {
   background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRyOTVsOGJpaXNvdmJ3MG94Y2o4cXEzYWk2N3Z6a3h6ZDdyMjJkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohhwzIw3bISRhQWME/giphy.gif);
   background-position: center;
+}
+
+.pro {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background-color: orange;
+  color: white;
+  font-size: 0.8rem;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .spacer {
+        height: 80px;
+      }
+      .parent {
+        width: 500px;
+        height: 1500px;
+        background-color: bisque;
+        /* margin: 50px auto; */
+        position: relative;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+        background-position: center;
+      }
+      .child:nth-child(1) {
+        background-image: url(https://images.pexels.com/photos/15639216/pexels-photo-15639216/free-photo-of-road-in-mountain-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        /* left: 500px;
+        top: 100px; */
+        /* position: fixed; */
+        position: absolute;
+        left: 200px;
+        /* right: 400px; */
+        top: 50px;
+        /* bottom: 550px; */
+      }
+      .child:nth-child(2) {
+        background-image: url(https://images.pexels.com/photos/15759641/pexels-photo-15759641/free-photo-of-scenic-mountain-peak-at-sunset.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      .child:nth-child(3) {
+        background-image: url(https://images.pexels.com/photos/14742450/pexels-photo-14742450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      .child:nth-child(4) {
+        background-image: url(https://images.pexels.com/photos/17226556/pexels-photo-17226556/free-photo-of-sunlight-piercing-clouds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      .child:nth-child(5) {
+        background-image: url(https://images.pexels.com/photos/14737147/pexels-photo-14737147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      .other {
+        width: 500px;
+        height: 1000px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spacer"></div>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <div class="other"></div>
+  </body>
+</html>
+
+<!-- positions -->
+
+<!-- static -->
+<!-- fixed -->
+<!-- sticky -->
+<!-- relative -->
+<!-- absolute -->
