@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        transition: all 300ms;
+      }
+
+      @media (max-width: 600px) and (orientation: landscape) {
+        .box {
+          width: 30%;
+          background-color: tomato;
+        }
+      }
+      @media (min-width: 600px) {
+        .box {
+          background-color: aqua;
+        }
+      }
+
+      @media (min-width: 700px) {
+        .box {
+          background-color: maroon;
+        }
+      }
+      @media (min-width: 900px) {
+        .box {
+          width: 100%;
+          background-color: yellowgreen;
+        }
+      }
+      @media (min-width: 1200px) and (max-width: 1300px) {
+        .box {
+          width: 100%;
+          background-color: violet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
