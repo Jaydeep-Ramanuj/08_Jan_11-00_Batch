@@ -2,6 +2,239 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0px 50px;
+}
+
+:root {
+  --primary-font-color: #4e4e4e;
+  --secondary-color: #4bb14d;
+  --third-color: #89919d;
+}
+
+/* ------------------- */
+/* Reusable classes */
+/* ------------------- */
+.section-title {
+  font-size: 1.8rem;
+  color: var(--primary-font-color);
+  font-weight: 600;
+}
+.section-description {
+  color: var(--primary-font-color);
+}
+
+.section-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.client-img {
+  height: 60px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+}
+/* ------------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .content {
+  width: 70%;
+  color: var(--primary-font-color);
+  padding: 0px 20px;
+}
+
+.hero-section .content .title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-section .content span {
+  color: var(--secondary-color);
+}
+.hero-section img {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.client-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-section .cilents-list {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.community-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.community-section .section-title {
+  width: 50%;
+  text-align: center;
+}
+
+.community-card-list {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.community-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+  color: var(--primary-font-color);
+  gap: 10px;
+}
+
+.community-card .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.community-card .description {
+  font-size: 0.9rem;
+}
+
+.community-card .fa-solid.fa-house {
+  font-size: 3rem;
+}
+
+.login-screen-section,
+.lock-screen-section {
+  display: flex;
+  padding: 0px 20px;
+}
+
+.login-screen-section img {
+  height: 300px;
+  object-fit: cover;
+  width: 30%;
+}
+
+.login-screen-section .content,
+.lock-screen-section .content,
+.associate-section .content {
+  margin: 20px 40px;
+  width: 60%;
+}
+
+.login-screen-section .btn,
+.lock-screen-section .btn {
+  width: 170px;
+  margin-top: 20px;
+}
+
+.lock-screen-section .section-img {
+  width: 300px;
+}
+
+.associate-section {
+  display: flex;
+}
+
+.associate-section .author {
+  color: var(--secondary-color);
+}
+
+.associate-section .post {
+  font-size: 0.9rem;
+  color: var(--third-color);
+  font-weight: 200;
+}
+
+.associate-section .customers-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.associate-section .client-img {
+  width: 80px;
+}
+
+.associate-section .content span {
+  margin-left: 10px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.associate-section .fa-solid.fa-arrow-right-long {
+  margin-left: 10px;
+}
+.demo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.demo-section .section-title {
+  font-size: 3rem;
+  width: 60%;
+  text-align: center;
+}
+
+.demo-section .btn {
+  margin-top: 30px;
+}
+
+.marketing-cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.marketing-cards-section .section-description {
+  width: 40%;
+  text-align: center;
+}
+
+.marketing-cards-section .marketing-card-list {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .marketing-card {
@@ -15,14 +248,15 @@
   object-fit: cover;
   border-radius: 8px;
 }
-.content {
+.marketing-card .content {
   width: 80%;
   padding: 8px;
   border-radius: 8px;
   text-align: center;
   background-color: #f3f5f9;
   position: absolute;
-  bottom: -8%;
+  bottom: -30%;
+  color: var(--primary-font-color);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   left: calc(100% - 90%);
@@ -30,4 +264,9 @@
 
 .content .read-more {
   margin-top: 10px;
+}
+
+.marketing-card .fa-solid.fa-arrow-right-long {
+  color: var(--secondary-color);
+  margin-left: 10px;
 }
