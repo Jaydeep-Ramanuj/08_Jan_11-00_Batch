@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        clip-path: circle(50% at 50% 50%);
+        animation-name: moveCircle;
+        animation-duration: 1200ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .child {
+        height: 150px;
+        width: 300px;
+        border-radius: 12px;
+        background-color: aqua;
+        z-index: 2;
+      }
+
+      @keyframes moveCircle {
+        0% {
+          clip-path: circle(50% at 0% 0%);
+        }
+        10% {
+          clip-path: circle(50% at 10% 30%);
+        }
+        40% {
+          clip-path: circle(50% at 30% 70%);
+        }
+        70% {
+          clip-path: circle(50% at 60% 60%);
+        }
+        100% {
+          clip-path: circle(50% at 100% 100%);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+      <!-- <div class="blob"></div> -->
+    </div>
+  </body>
+</html>
