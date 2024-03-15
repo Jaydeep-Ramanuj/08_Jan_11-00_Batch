@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --primary-color: rgba(128, 128, 128, 0.67);
+    }
+    .quote {
+      position: relative;
+      margin-left: 100px;
+      width: fit-content;
+      margin: 100px auto;
+    }
+    .quote::before,
+    .wrapper::before,
+    .quote::after,
+    .wrapper::after {
+      content: '';
+      /* background-color: var(--primary-color); */
+      /* background-image: linear-gradient(
+        to top,
+        #ff9a9e 0%,
+        #fecfef 99%,
+        #fecfef 100%
+      ); */
+
+      background-color: line;
+      position: absolute;
+      transition: all 300ms;
+      border-radius: 8px;
+      animation-name: style;
+      animation-duration: 600ms;
+      animation-iteration-count: infinite;
+      /* animation-iteration-count: 5; */
+      animation-timing-function: linear;
+      /* animation-fill-mode: re; */
+      animation-direction: alternate;
+    }
+    /* #12c2e9
+→ 
+#c471ed
+→ 
+#f64f59 */
+
+    .quote::after,
+    .wrapper::after {
+      /* background-image: linear-gradient(
+        to right,
+        #ff9a9e 0%,
+        #fecfef 99%,
+        #fecfef 100%
+      ); */
+      animation-name: style-right;
+    }
+    .quote::before,
+    .wrapper::before {
+      /* background-image: linear-gradient(
+            to top,
+            #ff9a9e 0%,
+            #fecfef 99%,
+            #fecfef 100%
+            ); */
+      animation-name: style-bottom;
+    }
+    @keyframes style-right {
+      /* 0% {
+        background-image: linear-gradient(to right, #12c2e9, #c471ed);
+      }
+      50% {
+        background-image: linear-gradient(to right, #c471ed, #f64f59);
+      }
+      100% {
+        background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+      } */
+
+      from {
+        background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+      }
+      to {
+        background-image: linear-gradient(to right, #43e97b 100%, #38f9d7 0%);
+      }
+    }
+    @keyframes style-bottom {
+      /* 0% {
+        background-image: linear-gradient(to bottom, #12c2e9, #c471ed);
+      }
+      50% {
+        background-image: linear-gradient(to bottom, #c471ed, #f64f59);
+      }
+      100% {
+        background-image: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);
+      } */
+
+      from {
+        background-image: linear-gradient(to bottom, #43e97b 0%, #38f9d7 100%);
+      }
+      to {
+        background-image: linear-gradient(to bottom, #38f9d7 0%, #43e97b 100%);
+      }
+    }
+    .quote::before {
+      height: 10%;
+      width: 5px;
+      left: -10px;
+    }
+    .quote::after {
+      height: 5px;
+      width: 5%;
+      bottom: -5px;
+      left: 0;
+    }
+    .quote:hover::after,
+    .quote:hover .wrapper::after {
+      width: 100%;
+    }
+    .quote:hover::before,
+    .quote:hover .wrapper::before {
+      height: 100%;
+    }
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .wrapper::before {
+      height: 10%;
+      width: 5px;
+      right: -10px;
+      bottom: 0;
+    }
+    .wrapper::after {
+      height: 5px;
+      width: 5%;
+      top: -5px;
+      right: 0px;
+    }
+  </style>
+  <body>
+    <div class="quote">
+      Si vis pacem Para bellum, <br />Sic Parvic Magna,<br />
+      There is magic in detail
+      <div class="wrapper"></div>
+    </div>
+  </body>
+</html>
