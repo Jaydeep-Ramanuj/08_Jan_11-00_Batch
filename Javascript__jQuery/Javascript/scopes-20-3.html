@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      globalVal = 10; //global scope
+      console.log('global scope:', globalVal);
+      function foo() {
+        console.log('function scope:', globalVal);
+        functionVal = 30; //
+        console.log('function scope:', functionVal);
+        // block scope
+        //function scope
+        // console.log(a);
+      }
+      foo();
+
+      console.log('global scope:', functionVal);
+
+      if (true) {
+        console.log();
+        c = 60;
+        // block scope
+      }
+
+      b = 20;
+    </script>
+  </body>
+</html>
