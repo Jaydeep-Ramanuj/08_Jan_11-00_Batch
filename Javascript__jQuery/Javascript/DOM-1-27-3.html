@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="parent" id="parent-id">
+      parent
+      <div class="child">Child</div>
+    </div> -->
+
+    <div>without anything</div>
+    <div class="some">div with some class</div>
+    <div id="some-id" class="some">div with some-id id</div>
+    <div id="some-id" class="some">div with some-id id</div>
+    <script>
+      console.log(document);
+      console.dir(document);
+
+      //   let parentById = document.getElementById('parent-id');
+      //   console.log(parentById);
+
+      //   let parentByClass = document.getElementsByClassName('parent');
+
+      //   console.log(parentByClass);
+
+      // -------------
+
+      //   getElementById
+      let divWithId = document.getElementById('some-id');
+      console.log(divWithId);
+
+      //   getElementsByClassName
+      let divWithClass = document.getElementsByClassName('some');
+      console.log(divWithClass);
+
+      console.log(divWithClass[0]);
+
+      //   getElementsByTagName
+      let divWithTagName = document.getElementsByTagName('div');
+      console.log(divWithTagName);
+
+      //   querySelector
+      let divWithQuerySelector = document.querySelector('div.some');
+      console.log(divWithQuerySelector);
+
+      // querySelectorAll
+      let divWithQuerySelectorAll = document.querySelectorAll('div.some');
+      console.log(divWithQuerySelectorAll);
+    </script>
+  </body>
+</html>

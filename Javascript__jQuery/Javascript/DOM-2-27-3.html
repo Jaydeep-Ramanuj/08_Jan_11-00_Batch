@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      This is parent
+      <div class="chlid">This is child</div>
+    </div>
+    <script>
+      //   // types of cases
+
+      //   thisIsSomeThing; // camel case
+      //   this_is_some_thing; // snake case
+      //   //   this-is-some-thing // kabab case
+      //   ThisIsSomeThing; //Pascal case
+
+      let boxElement = document.getElementsByClassName('parent');
+      console.log(boxElement);
+
+      // innerText
+      console.log(boxElement[0].innerText);
+
+      //   boxElement[0].innerText = 'some';
+
+      // innerHTML
+      console.log(boxElement[0].innerHTML);
+
+      //   boxElement[0].innerHTML = '<p>This is p tag</p>';
+
+      //   css through js
+      boxElement[0].style.border = '1px solid black';
+      boxElement[0].style.backgroundColor = 'red';
+
+      boxElement[0].style.cssText =
+        'border:1px solid black; background-color:red;';
+    </script>
+  </body>
+</html>
