@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 300px;
+        width: 300px;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/326519/pexels-photo-326519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+    />
+
+    <script>
+      let image = document.getElementsByTagName('img')[0];
+
+      console.log(image);
+
+      //   -----------
+      // setAttribute
+
+      //   image.setAttribute(
+      //     'src',
+      //     'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      //   );
+
+      //   -----------
+      // getAttribute
+      //   image.removeAttribute('alt');
+
+      //   -----------
+      // getAttribute
+      console.log(image.getAttribute('src'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+      .img {
+        height: 300px;
+        width: 300px;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    </style>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="card">
+      <p>This is p tag</p>
+    </div>
+    <script>
+      let card = document.getElementsByClassName('card')[0];
+
+      // --------
+      //   createElement
+      newImgElement = document.createElement('img');
+
+      newImgElement.setAttribute(
+        'src',
+        'https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      );
+
+      newImgElement.setAttribute('alt', 'Image not loading');
+      newImgElement.classList.add('img');
+      //   newImgElement.style.cssText =
+      //     'height: 300px; width: 300px; border-radius: 12px;  object-fit: cover;';
+      console.log(newImgElement);
+
+      // --------
+      //   append and prepend
+      //   card.append(newImgElement);
+      card.prepend(newImgElement);
+    </script>
+  </body>
+</html>

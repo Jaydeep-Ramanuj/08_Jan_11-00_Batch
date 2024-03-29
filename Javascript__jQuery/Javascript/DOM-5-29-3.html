@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kuchhBhi {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click here</button>
+    <div class="some else every">Something</div>
+    <script>
+      let some = document.getElementsByClassName('some')[0];
+
+      // --------
+      //   classList and className
+
+      //   console.log(some.classList);
+      //   console.log(some.className);
+
+      // --------
+      //   contains()
+      //   console.log(some.classList.contains('some1'));
+
+      // --------
+      //   add()
+      some.classList.add('jay');
+
+      // --------
+      //   remove()
+
+      some.classList.remove('every');
+
+      // --------
+      //   toggle()
+      document.getElementsByTagName('button')[0].onclick = () => {
+        some.classList.toggle('kuchhBhi');
+      };
+    </script>
+  </body>
+</html>
