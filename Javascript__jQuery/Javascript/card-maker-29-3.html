@@ -7,39 +7,75 @@
     <link rel="stylesheet" href="../../CSS_CSS-3/card.css" />
   </head>
   <body>
+    <p>This is p tag</p>
+    <!-- <div class="card">
+      <div class="card-info">
+        <img src="images/pexels-photo-2379005-removebg-preview.png" alt="" />
+        <div class="name">Sushil</div>
+        <div class="city">Rajkot</div>
+        <div class="profession">Full stack developer</div>
+      </div>
+    </div> -->
+
     <script>
       let body = document.getElementsByTagName('body')[0];
 
       let newCardEle = document.createElement('div');
       newCardEle.classList.add('card');
-      let newCardInfoEle = document.createElement('div');
-      newCardInfoEle.classList.add('card-info');
+      // let newCardInfoEle = document.createElement('div');
+      // newCardInfoEle.classList.add('card-info');
 
-      let newImgEle = document.createElement('img');
-      newImgEle.setAttribute(
-        'src',
-        'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-      );
+      // let newImgEle = document.createElement('img');
+      // newImgEle.setAttribute(
+      //   'src',
+      //   'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      // );
 
-      let newNameEle = document.createElement('div');
-      newNameEle.classList.add('name');
-      newNameEle.innerText = 'Sushil';
-      let newCityEle = document.createElement('div');
-      newCityEle.classList.add('city');
-      newCityEle.innerText = 'Rajkot';
-      let newProfessionEle = document.createElement('div');
-      newProfessionEle.classList.add('profession');
-      newProfessionEle.innerText = 'Full Stack Developer';
+      // let newNameEle = document.createElement('div');
+      // newNameEle.classList.add('name');
+      // newNameEle.innerText = 'Sushil';
+      // let newCityEle = document.createElement('div');
+      // newCityEle.classList.add('city');
+      // newCityEle.innerText = 'Rajkot';
+      // let newProfessionEle = document.createElement('div');
+      // newProfessionEle.classList.add('profession');
+      // newProfessionEle.innerText = 'Full Stack Developer';
 
-      newCardInfoEle.append(newImgEle);
-      newCardInfoEle.append(newNameEle);
-      newCardInfoEle.append(newCityEle);
-      newCardInfoEle.append(newProfessionEle);
+      // newCardInfoEle.append(newImgEle);
+      // newCardInfoEle.append(newNameEle);
+      // newCardInfoEle.append(newCityEle);
+      // newCardInfoEle.append(newProfessionEle);
 
-      //   console.log(newCardInfoEle);
-      newCardEle.append(newCardInfoEle);
+      // //   console.log(newCardInfoEle);
+      // newCardEle.append(newCardInfoEle);
       //   console.log(newCardEle);
-      body.prepend(newCardEle);
+      // body.prepend(newCardEle);
+
+      //   body.innerHTML = `<div class="card">
+      //   <div class="card-info">
+      //     <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+      //     <div class="name">Sushil</div>
+      //     <div class="city">Rajkot</div>
+      //     <div class="profession">Full stack developer</div>
+      //   </div>
+      // </div>`;
+
+      let name = 'vijay';
+      let city = 'surat';
+      let profession = 'Full stack';
+
+      newCardEle.innerHTML = `
+      <div class="card-info">
+        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+        <div class="name">${name}</div>
+        <div class="city">${city}</div>
+        <div class="profession">${profession}</div>
+      </div>
+    `;
+
+      body.append(newCardEle);
     </script>
   </body>
 </html>
+
+''

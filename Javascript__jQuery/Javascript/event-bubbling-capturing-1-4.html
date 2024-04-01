@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        background-color: wheat;
+        margin: 50px auto;
+      }
+      .child {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        background-color: yellowgreen;
+      }
+
+      .sub-child {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <div class="sub-child"></div>
+      </div>
+    </div>
+
+    <script>
+      let html = document.getElementsByTagName('html')[0];
+      let body = document.getElementsByTagName('body')[0];
+      let parent = document.getElementsByClassName('parent')[0];
+      let child = document.getElementsByClassName('child')[0];
+
+      let subChild = document.getElementsByClassName('sub-child')[0];
+
+      // ------------
+      // event propagation / event bubbling + stopPropagation()
+
+      //     html.addEventListener('click', (event) => {
+      //       // event.stopPropagation();
+      //       console.log('HTML clicked');
+      //     });
+      //     body.addEventListener('click', (event) => {
+      //       // event.stopPropagation();
+      //       console.log('Body clicked');
+      //     });
+      //     parent.addEventListener('click', (event) => {
+      //       // event.stopPropagation();
+      //       console.log('Parent clicked');
+      //     });
+      //     child.addEventListener('click', (event) => {
+      //       // event.stopPropagation();
+      //       console.log('Child clicked');
+      //     });
+      //     subChild.addEventListener('click', (event) => {
+      //       // event.stopPropagation();
+      //       console.log('subChild clicked');
+      //     });
+
+      //   // ------------
+      //   // event capturing / event trickling
+
+      //   html.addEventListener(
+      //     'click',
+      //     (event) => {
+      //       console.log('HTML clicked');
+      //     },
+      //     true
+      //   );
+      //   body.addEventListener(
+      //     'click',
+      //     (event) => {
+      //       console.log('Body clicked');
+      //     },
+      //     true
+      //   );
+      //   parent.addEventListener(
+      //     'click',
+      //     (event) => {
+      //       console.log('Parent clicked');
+      //     },
+      //     true
+      //   );
+      //   child.addEventListener(
+      //     'click',
+      //     (event) => {
+      //       console.log('Child clicked');
+      //     },
+      //     true
+      //   );
+      //   subChild.addEventListener(
+      //     'click',
+      //     (event) => {
+      //       console.log('subChild clicked');
+      //     },
+      //     true
+      //   );
+
+      // ------------
+      // event delegation
+      subChild.addEventListener('click', () => {});
+      child.addEventListener('click', () => {
+        console.log('sub-child clicked');
+        // console.log('child clicked');
+      });
+    </script>
+  </body>
+</html>
