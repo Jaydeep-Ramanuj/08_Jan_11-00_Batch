@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      name = 'sanjay';
+
+      // ---------
+      //   syntax
+      // arrayName=[arrayItems1,arrayItems2,arrayItems3]
+
+      // An array can hold number, string, variable, boolean, array, object, function
+
+      //   arr1 = [10, 20, 30];
+
+      //   function foo() {}
+      //   obj1 = {
+      //     name: 'some',
+      //   };
+
+      //   someArray = [
+      //     'jay',
+      //     name,
+      //     10,
+      //     true,
+      //     arr1,
+      //     [['abc', 'xyz', 'pqr'], 'b', 'c'],
+      //     foo,
+      //     obj1,
+      //   ];
+
+      //   console.log(someArray);
+      //   someArray[2] = 20;
+      //   console.log(someArray);
+
+      //   You can access specific array item using its index
+      //   console.log(someArray[5][0][1]);
+
+      let foodList = [
+        'sandwich',
+        'burger',
+        'pasta',
+        'momos',
+        'pizza',
+        'dhokla',
+      ];
+
+      //   Array Methods
+
+      // .length, gives length of an array
+      console.log(foodList.length);
+
+      //   push(), to add at last index
+      console.log(foodList);
+      foodList.push('Khaman');
+      console.log(foodList);
+
+      //   unshift(), to add at first index
+      console.log(foodList);
+      foodList.unshift('gulabjamun');
+      console.log(foodList);
+
+      //   pop(), to remove from last index
+      console.log(foodList);
+      foodList.pop();
+      console.log(foodList);
+
+      //   shift(), to remove from first index
+      console.log(foodList);
+      foodList.shift();
+      console.log(foodList);
+
+      //   reverse(), to remove from first index
+      console.log(foodList);
+      foodList.reverse();
+      console.log(foodList);
+
+      //   join(), to get string with specified delimiter
+      console.log(foodList);
+      foodListString = foodList.join('-');
+      console.log(foodListString);
+      console.log(foodList);
+
+      //   join(), to get string with specified delimiter
+      console.log(foodList);
+      firstThreeFoods = foodList.slice(0, 3);
+      console.log(firstThreeFoods);
+      lastThreeFoods = foodList.slice(3, 6);
+      console.log(lastThreeFoods);
+      console.log(foodList);
+
+      // get last three items when array length is unknown
+      foodListLength = foodList.length;
+      console.log(foodListLength);
+
+      indexOfThirdElementFromLast = foodListLength - 3;
+      console.log(indexOfThirdElementFromLast);
+
+      lastFoodListWithUnknownArrayLength = foodList.slice(
+        indexOfThirdElementFromLast,
+        foodListLength
+      );
+
+      console.log(lastFoodListWithUnknownArrayLength);
+
+      nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12, 13];
+      console.log(nums);
+
+      len = nums.length;
+      console.log(len);
+      lastThree = len - 3;
+      console.log(lastThree);
+      console.log(nums.slice(lastThree, len));
+
+      console.log(nums.slice(3));
+
+      //   you can access character of string using index too
+
+      str = 'iHaveThisLong Long String';
+      console.log(str[10]);
+      console.log(str.length);
+      console.log(str.slice(3));
+      console.log(str.slice(str.length - 5, str.length));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // give me sum of first and last digit
+      num = 123456798;
+      //   console.log(num);
+
+      //   console.log(num.toString()); // converting number to string using .toString() method
+      //   console.log(String(num)); // converting number to string using Sting()
+
+      //   console.log(num.toString()[0]);
+
+      //   console.log(num.toString()[num.toString().length - 1]);
+
+      console.log(
+        Number(num.toString()[0]) +
+          Number(num.toString()[num.toString().length - 1])
+      );
+
+      num = 123456798;
+
+      numLen = Math.ceil(Math.log10(num));
+      //   console.log('numLen: ', numLen);
+
+      //   console.log(10 ** (numLen - 1));
+      firstDigit = Math.floor(num / 10 ** (numLen - 1));
+      //   console.log(firstDigit);
+
+      lastDigit = num % 10;
+      //   console.log(lastDigit);
+
+      result = firstDigit + lastDigit;
+      console.log(result);
+
+      c = 90;
+
+      console.log(c * (9 / 5) + 32);
+    </script>
+  </body>
+</html>
