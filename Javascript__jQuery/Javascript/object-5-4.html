@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      names = ['jay', 'sanjay', 'ajay', 'vijay'];
+      console.log(names[2]);
+      personArray = ['jay', 23, 'Rajkot', 'Front end'];
+
+      console.log(personArray[2]);
+
+      person = {
+        name: 'jay',
+        course: 'Front end',
+        age: 23,
+      };
+
+      personData = {
+        jay: {
+          name: 'jay',
+          course: 'Front end',
+          age: 23,
+        },
+        sanjay: {
+          name: 'sanjay',
+          course: 'WD',
+          age: 24,
+        },
+        vijay: {
+          name: 'Vijay',
+          course: 'Full stack',
+          age: 21,
+        },
+        ajay: {
+          name: 'Ajay',
+          course: 'SE',
+          age: 24,
+        },
+      };
+
+      //   console.log(console);
+      //   console.warn('Hey dont do it');
+      //   console.error('Hey dont do it');
+      //   console.info('Hey dont do it');
+
+      console.table(personData);
+      console.log(personData.jay.name);
+      console.log(personData.jay['name']);
+
+      personData.jay.name = 'Cool jay';
+      console.log(personData);
+    </script>
+  </body>
+</html>

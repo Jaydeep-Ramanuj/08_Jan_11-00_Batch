@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = 2;
+      status = '';
+      // approach 1
+      //   if (age <= 3) {
+      //     console.log('Your ticket will be free');
+      //   } else if (age > 3 && age <= 8) {
+      //     console.log('You have to buy half ticket');
+      //   } else if (age > 8 && status == 'MLA') {
+      //     console.log('You will have to pay -10 rs.');
+      //   } else if (age > 8 && status == 'SA') {
+      //     console.log('You will have to pay -25 rs.');
+      //   } else if (age > 8 && status == 'woman') {
+      //     console.log('You will have to pay -15 rs.');
+      //   } else {
+      //     console.log('You will have to pay full price');
+      //   }
+
+      // approach 2
+      if (age <= 8) {
+        if (age <= 3) {
+          console.log('Your ticket will be free');
+        } else {
+          console.log('You have to buy half ticket');
+        }
+      } else {
+        if (status == 'MLA') {
+          console.log('You will have to pay -10 rs.');
+        } else if (status == 'SA') {
+          console.log('You will have to pay -25 rs.');
+        } else if (status == 'woman') {
+          console.log('You will have to pay -15 rs.');
+        } else {
+          console.log('You will have to pay full price');
+        }
+      }
+    </script>
+  </body>
+</html>
