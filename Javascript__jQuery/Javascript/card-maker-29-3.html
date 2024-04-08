@@ -18,10 +18,10 @@
     </div> -->
 
     <script>
-      let body = document.getElementsByTagName('body')[0];
+      // let body = document.getElementsByTagName('body')[0];
 
-      let newCardEle = document.createElement('div');
-      newCardEle.classList.add('card');
+      // let newCardEle = document.createElement('div');
+      // newCardEle.classList.add('card');
       // let newCardInfoEle = document.createElement('div');
       // newCardInfoEle.classList.add('card-info');
 
@@ -60,11 +60,29 @@
       //   </div>
       // </div>`;
 
-      let name = 'vijay';
-      let city = 'surat';
-      let profession = 'Full stack';
+      //   let name = 'vijay';
+      //   let city = 'surat';
+      //   let profession = 'Full stack';
 
-      newCardEle.innerHTML = `
+      //   newCardEle.innerHTML = `
+      //   <div class="card-info">
+      //     <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+      //     <div class="name">${name}</div>
+      //     <div class="city">${city}</div>
+      //     <div class="profession">${profession}</div>
+      //   </div>
+      // `;
+
+      for (let i = 0; i < 5; i++) {
+        let body = document.getElementsByTagName('body')[0];
+
+        let newCardEle = document.createElement('div');
+        newCardEle.classList.add('card');
+        let name = 'vijay';
+        let city = 'surat';
+        let profession = 'Full stack';
+
+        newCardEle.innerHTML = `
       <div class="card-info">
         <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
         <div class="name">${name}</div>
@@ -73,7 +91,8 @@
       </div>
     `;
 
-      body.append(newCardEle);
+        body.append(newCardEle);
+      }
     </script>
   </body>
 </html>
