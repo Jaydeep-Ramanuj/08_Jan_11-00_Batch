@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" novalidate>
+      <input type="email" name="" id="" />
+      <button>Submit</button>
+    </form>
+    <script>
+      document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click', (event) => {
+          event.preventDefault();
+          let emailInputValue = document.getElementsByTagName('input')[0].value;
+
+          isEmailValid = validateEmail(emailInputValue);
+          console.log(isEmailValid);
+
+          if (isEmailValid && isPasswordValid && isUsernameValid) {
+            console.log('true');
+          } else {
+            console.log('false');
+          }
+        });
+
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      function validateEmail(value) {
+        console.log(value);
+
+        // let isEmpty = false;
+        // if (value.length == 0) {
+        //   isEmpty = true;
+        // }
+        // let isAtPresent = false;
+        // for (let i = 0; i < value.length; i++) {
+        //   if (value[i] == '@') {
+        //     isAtPresent = true;
+        //   }
+        // }
+        // let isDotPresent = false;
+        // for (let i = 0; i < value.length; i++) {
+        //   if (value[i] == '.') {
+        //     isDotPresent = true;
+        //   }
+        // }
+        // let isAtAndDotTogether = false;
+        // for (let i = 0; i < value.length; i++) {
+        //   if (value[i] + value[i + 1] == '@.') {
+        //     isAtAndDotTogether = true;
+        //   }
+        // }
+        // console.log(!isEmpty);
+        // console.log(isAtPresent);
+        // console.log(isDotPresent);
+        // console.log(!isAtAndDotTogether);
+
+        // let isEmpty = false;
+        // let isAtPresent = false;
+        // let isDotPresent = false;
+        // let isAtAndDotTogether = false;
+
+        // console.log(value.includes('@'));
+        // console.log(value.includes('.'));
+        // console.log(!value.includes('@.'));
+        // console.log(!value.length == 0);
+
+        // let atIndex = ;
+        // console.log(!value.slice(0, value.indexOf('@')).length == 0);
+        // let dotIndex = value.indexOf('.');
+        // console.log(dotIndex);
+        // console.log(!value.slice(dotIndex + 1, value.length).length == 0);
+
+        // console.log(
+        //   !value.length == 0 &&
+        //     value.includes('@') &&
+        //     value.includes('.') &&
+        //     !value.includes('@.') &&
+        //     !value.slice(0, value.indexOf('@')).length == 0 &&
+        //     !value.slice(value.indexOf('.') + 1, value.length).length == 0
+        // );
+
+        return (
+          !value.length == 0 &&
+          value.includes('@') &&
+          value.includes('.') &&
+          !value.includes('@.') &&
+          !value.slice(0, value.indexOf('@')).length == 0 &&
+          !value.slice(value.indexOf('.') + 1, value.length).length == 0
+        );
+      }
+
+      //   console.log(checkPresent('jay@dsds.com', ['@', '.']));
+      //   function checkPresent(value, items) {
+      //     let isAllPresent = true;
+      //     for (let i = 0; i < items.length; i++) {
+      //       if (!value.includes(items[i])) {
+      //         isAllPresent = false;
+      //       }
+      //     }
+      //     return isAllPresent;
+      //   }
+    </script>
+  </body>
+</html>
