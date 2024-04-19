@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>History File</h1>
+    <a href="navigator-19-4.html">Go to Navigator file</a>
+
+    <button id="back">Go back</button>
+    <script>
+      console.log(window);
+
+      window.history;
+      document.getElementById('back').addEventListener('click', () => {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>

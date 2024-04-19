@@ -124,16 +124,16 @@
         );
       }
 
-      //   console.log(checkPresent('jay@dsds.com', ['@', '.']));
-      //   function checkPresent(value, items) {
-      //     let isAllPresent = true;
-      //     for (let i = 0; i < items.length; i++) {
-      //       if (!value.includes(items[i])) {
-      //         isAllPresent = false;
-      //       }
-      //     }
-      //     return isAllPresent;
-      //   }
+      console.log(checkPresent('jay@dsds.com', ['@', '.', '*']));
+      function checkPresent(value, items) {
+        let isAllPresent = true;
+        for (let i = 0; i < items.length; i++) {
+          if (!value.includes(items[i])) {
+            isAllPresent = false;
+          }
+        }
+        return isAllPresent;
+      }
     </script>
   </body>
 </html>

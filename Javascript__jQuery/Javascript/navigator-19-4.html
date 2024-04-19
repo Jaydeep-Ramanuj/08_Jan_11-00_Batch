@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Navigator File</h1>
+    <a href="history-19-4.html">Go to History file</a>
+
+    <button id="next">Go Next</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    document.getElementById('next').addEventListener('click', () => {
+      window.history.forward();
+    });
+
+    console.log(window);
+
+    // read clipBoard from
+
+    // window.navigator.clipboard
+    //   .readText()
+    //   .then((response) => console.log(response));
+
+    //   getting current location
+
+    let locationInfo = [];
+
+    some = setInterval(() => {
+      window.navigator.geolocation.getCurrentPosition(
+        (response) => {
+          //   console.log(response);
+          locationInfo.push({
+            lat: response.coords.latitude,
+            lng: response.coords.longitude,
+            time: response.timestamp,
+          });
+        },
+        () => {}
+      );
+    }, 500);
+
+    document.getElementById('stop').onclick = () => {
+      clearInterval(some);
+      console.log(locationInfo);
+    };
+  </script>
+</html>
