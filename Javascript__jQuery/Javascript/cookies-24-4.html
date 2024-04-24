@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(window);
+      console.dir(document);
+
+      //   clientData = {
+      //     name: 'jay',
+      //     clientId: 1321354,
+      //     city: 'Rajkot',
+      //   };
+
+      function setCookies(name, id, city) {
+        data = {
+          name: name,
+          clientId: id,
+          city: city,
+        };
+        console.log(data);
+        dataString = JSON.stringify(data);
+        document.cookie = dataString;
+      }
+
+      function getCookies() {
+        cookieString = document.cookie;
+        cookieObj = JSON.parse(cookieString);
+        console.log(cookieObj);
+      }
+      //   console.log(clientData);
+
+      //   console.log(clientData.toLocaleString());
+      //   str = JSON.stringify(clientData);
+      //   console.log(str);
+
+      //   str = Object.toString(clientData);
+
+      //   console.log(clientData.toString());
+
+      //   document.cookie = clientData;
+
+      //   document.cookie = str;
+
+      setCookies('Ajay', 3132, 'Baroda');
+      getCookies();
+
+      //   getCookies = document.cookie;
+      //   console.log(getCookies);
+
+      //   console.log(document.cookie);
+    </script>
+  </body>
+</html>
