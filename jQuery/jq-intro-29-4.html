@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">Inner-child</div>
+    </div>
+    <div class="child">Outer-child</div>
+    <button>Click here</button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      const btn = document.getElementsByTagName('button')[0];
+      console.log(btn);
+
+      //   btn.addEventListener('click', () => {
+      //     console.log('Button clicked');
+      //   });
+
+      //   btn.onclick = () => console.log('Button clicked');
+
+      //   $('button').click(() => {
+      //     console.log('btn clicked');
+      //   });
+
+      $('button').click(() => {
+        console.log('Btn clicked');
+      });
+      $('.parent .child').click(() => {
+        console.log('Inner child clicked');
+      });
+      //   console.log($('.parent'));
+    </script>
+  </body>
+</html>
