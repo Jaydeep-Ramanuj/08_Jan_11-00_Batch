@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 1px solid;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <b>This is already present</b>
+    </div>
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="before">Before</button>
+    <button id="after">After</button>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('#append').click(() => {
+        let newElement = $('<p>appended at the end </p>');
+        $('.box').append(newElement);
+      });
+      $('#prepend').click(() => {
+        let newElement = $('<p>prepended at the top</p>');
+
+        $('.box').prepend(newElement);
+      });
+      $('#before').click(() => {
+        let newElement = $('<p> Added before box  </p>');
+        $('.box').before(newElement);
+      });
+      $('#after').click(() => {
+        let newElement = $('<p>Added after after box  </p>');
+        $('.box').after(newElement);
+      });
+    </script>
+  </body>
+</html>
