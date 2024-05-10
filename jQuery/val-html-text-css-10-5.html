@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        border: 1px solid;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      This is text
+      <p>This is p tag</p>
+    </div>
+    <input type="text" name="" id="" placeholder="Enter your name" />
+    <button>click here</button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('button').click(() => {
+        // accessing input
+        // console.log($('input'));
+        //
+        // accessing input value
+        // console.log($('input').val());
+        //
+        // setting input value
+        // console.log($('input').val('Sanjay'));
+        //
+        // -----------
+        //
+        // accessing innerText
+        // console.log($('.box').text());
+        //
+        // setting innerText
+        // console.log($('.box').text('This is new text'));
+        //
+        // -----------
+        //
+        // accessing innerHTML
+        // console.log($('.box').html());
+        //
+        // setting innerHTML
+        // console.log($('.box').html('<b>This is new HTML</b>'));
+        //
+        // -----------
+        //
+        // accessing css property values
+        // console.log($('.box').css('height'));
+        // console.log($('.box').css('width'));
+        // console.log($('.box').css('color'));
+        // console.log($('.box').css('background-color'));
+        // setting css property values
+        // console.log($('.box').css('height', '100px'));
+        // console.log($('.box').css('color', 'aqua'));
+        // console.log($('.box').css({ color: 'blue', backgroundColor: 'red' }));
+        //
+        // -----------
+        //
+        // animate method
+        console.log(
+          $('.box').animate(
+            {
+              height: '100px',
+              width: '300px',
+              top: '100px',
+            },
+            1000
+          )
+        );
+      });
+    </script>
+  </body>
+</html>

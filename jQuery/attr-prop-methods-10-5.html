@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box some">Some</div>
+
+    <input
+      type="text"
+      name=""
+      id=""
+      value=""
+      placeholder="Enter your name"
+      required
+    />
+    <img src="" alt="" />
+    <button>Click here</button>
+    <p></p>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('button').click(() => {
+        // accessing attr value
+        // console.log($('.box').attr('class'));
+        //
+        // -------
+        //
+        // accessing attr
+        // $('.box').removeAttr('class');
+        //
+        // -------
+        //
+        // setting / creating attr value
+        // $('img').attr(
+        //   'src',
+        //   'https://images.pexels.com/photos/2251206/pexels-photo-2251206.jpeg?auto=compress&cs=tinysrgb&w=600'
+        // );
+        //
+        // -------
+        //
+        // accessing prop value
+        // console.log($('input').prop('required'));
+        // setting props
+        // console.log($('input').prop('disabled', 'true'));
+        console.log($('input').prop('value', 'false'));
+        // removing prop
+        // $('input').removeProp('disabled');
+      });
+    </script>
+    <script>
+      para = $('p');
+      para
+        .prop('luggageCode', 1234)
+        .append(
+          'The secret luggage code is: ',
+          String(para.prop('luggageCode')),
+          '. '
+        );
+      console.log(para.prop('luggageCode'));
+      console.dir(document.getElementsByTagName('p')[0]);
+      para.removeProp('luggageCode');
+      console.dir(document.getElementsByTagName('p')[0]);
+    </script>
+  </body>
+</html>
