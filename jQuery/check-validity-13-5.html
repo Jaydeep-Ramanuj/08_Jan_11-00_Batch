@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .valid-username {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" novalidate>
+      <input
+        type="text"
+        name=""
+        id="username"
+        placeholder="Enter your username"
+        required
+      />
+      <div class="valid-username"></div>
+      <input type="email" name="" id="email" placeholder="Enter your email" />
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Enter your password"
+      />
+      <button onclick="">Submit</button>
+    </form>
+    <script>
+      const username = document.getElementById('username');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const usernameMsg = document.getElementsByClassName('valid-username')[0];
+
+      document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click', (e) => {
+          e.preventDefault();
+          if (username.checkValidity()) {
+            usernameMsg.innerText = 'Valid';
+            usernameMsg.style.color = 'green';
+            usernameMsg.style.display = 'block';
+          } else {
+            usernameMsg.innerText = 'In-Valid';
+            usernameMsg.style.color = 'red';
+            usernameMsg.style.display = 'block';
+          }
+        });
+    </script>
+  </body>
+</html>

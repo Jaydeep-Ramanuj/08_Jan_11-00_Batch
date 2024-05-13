@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="example" view-image>
+      <img
+        src="https://images.pexels.com/photos/1497529/pexels-photo-1497529.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="jQueryScript.Net"
+      />
+      <img
+        src="https://images.pexels.com/photos/11446367/pexels-photo-11446367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="jQueryScript.Net"
+      />
+      <img
+        src="https://images.pexels.com/photos/6330982/pexels-photo-6330982.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="jQueryScript.Net"
+        no-view
+      />
+    </div>
+    <script></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script src="plugins/Minimalist-Image-Zoom-Plugin-For-jQuery-ViewImage-js/view-image.js"></script>
+
+    <script>
+      window.viewImage && viewImage.init('#example img');
+    </script>
+
+    <!-- <script>
+      viewImage({
+        target: 'img',
+      });
+    </script> -->
+  </body>
+</html>
