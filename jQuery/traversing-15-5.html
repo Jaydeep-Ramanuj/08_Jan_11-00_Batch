@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child">child1</div>
+      <div class="child" id="child2">child2</div>
+      <div class="child">child3</div>
+      <div class="child">child4</div>
+      <div class="child" id="child5">child5</div>
+      <div class="child">child6</div>
+      <p class="child">child with p tag</p>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      // Accessing first element from element list
+      console.log($('.child').first());
+
+      // Accessing last element from element list
+      console.log($('.child').last());
+
+      // Accessing element at specified index from element list
+      console.log($('.child').eq(2));
+
+      // Filtering elements from element list using given element
+      console.log($('.child').filter('#child2'));
+
+      // Filtering elements from element list using given element
+      console.log($('.child').filter('p'));
+
+      // Accessing all elements from element list except given element
+      console.log($('.child').not('.parent > p'));
+    </script>
+  </body>
+</html>
