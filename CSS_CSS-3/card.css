@@ -59,6 +59,7 @@ img:hover {
 .profession,
 .city {
   transition: all 300ms;
+  text-align: center;
 }
 .name:hover,
 .profession:hover,
