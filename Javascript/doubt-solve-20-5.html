@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        padding: 20px;
+        width: fit-content;
+        border: 1px solid;
+        margin: 50px auto;
+        /* position: relative; */
+      }
+      .wrapper .box {
+        background-color: yellowgreen;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        border-radius: 8px;
+        background-color: tomato;
+        /* margin-left: 30px; */
+        position: absolute;
+        left: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="wrapper">
+      <div class="box"></div>
+    </div>
+
+    <div class="box">This is outside box</div> -->
+
+    <input type="number" name="" id="num1" placeholder="Enter first number" />
+
+    <input type="number" name="" id="num2" placeholder="Enter second number" />
+
+    <input
+      type="text"
+      name=""
+      id="op"
+      maxlength="1"
+      placeholder="Enter operation"
+    />
+
+    <button>Calculate</button>
+    <script>
+      let box = document.querySelector('.wrapper .box');
+      // console.log(box);
+      // console.dir(box);
+
+      //   console.log(box.offsetLeft);
+
+      //   switch (new Date.getDay()) {
+      //     case 0:
+      //       break;
+      //     case 1:
+      //       break;
+      //     case 10<20:
+      //       break;
+
+      //     default:
+      //       break;
+      //   }
+
+      function calc(num1, num2, operation) {
+        switch (operation) {
+          case '+':
+            return num1 + num2;
+            break;
+          case '-':
+            return num1 - num2;
+            break;
+          case '*':
+            return num1 * num2;
+            break;
+          case '/':
+            return num1 / num2;
+            break;
+          case '%':
+            return num1 % num2;
+            break;
+          default:
+            console.log('Wrong input');
+            break;
+        }
+      }
+
+      let num1 = document.getElementById('num1');
+      let num2 = document.getElementById('num2');
+      let op = document.getElementById('op');
+      let btn = document.getElementsByTagName('button')[0];
+
+      btn.addEventListener('click', () => {
+        console.log(calc(Number(num1.value), Number(num2.value), op.value));
+      });
+
+      // console.log(calc(10, 20, '+'));
+      // console.log(calc(10, 20, '-'));
+    </script>
+  </body>
+</html>
