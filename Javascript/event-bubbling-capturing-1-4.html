@@ -38,8 +38,10 @@
   </head>
   <body>
     <div class="parent">
+      Parent
       <div class="child">
-        <div class="sub-child"></div>
+        Child
+        <div class="sub-child">Sub-child</div>
       </div>
     </div>
 
@@ -54,26 +56,26 @@
       // ------------
       // event propagation / event bubbling + stopPropagation()
 
-      //     html.addEventListener('click', (event) => {
-      //       // event.stopPropagation();
-      //       console.log('HTML clicked');
-      //     });
-      //     body.addEventListener('click', (event) => {
-      //       // event.stopPropagation();
-      //       console.log('Body clicked');
-      //     });
-      //     parent.addEventListener('click', (event) => {
-      //       // event.stopPropagation();
-      //       console.log('Parent clicked');
-      //     });
-      //     child.addEventListener('click', (event) => {
-      //       // event.stopPropagation();
-      //       console.log('Child clicked');
-      //     });
-      //     subChild.addEventListener('click', (event) => {
-      //       // event.stopPropagation();
-      //       console.log('subChild clicked');
-      //     });
+      // html.addEventListener('click', (event) => {
+      //   // event.stopPropagation();
+      //   console.log('HTML clicked');
+      // });
+      // body.addEventListener('click', (event) => {
+      //   // event.stopPropagation();
+      //   console.log('Body clicked');
+      // });
+      // parent.addEventListener('click', (event) => {
+      //   // event.stopPropagation();
+      //   console.log('Parent clicked');
+      // });
+      // child.addEventListener('click', (event) => {
+      //   // event.stopPropagation();
+      //   console.log('Child clicked');
+      // });
+      // subChild.addEventListener('click', (event) => {
+      //   // event.stopPropagation();
+      //   console.log('subChild clicked');
+      // });
 
       //   // ------------
       //   // event capturing / event trickling
@@ -106,13 +108,13 @@
       //     },
       //     true
       //   );
-      //   subChild.addEventListener(
-      //     'click',
-      //     (event) => {
-      //       console.log('subChild clicked');
-      //     },
-      //     true
-      //   );
+      // subChild.addEventListener(
+      //   'click',
+      //   (event) => {
+      //     console.log('subChild clicked');
+      //   },
+      //   true
+      // );
 
       // ------------
       // event delegation
@@ -121,6 +123,36 @@
         console.log('sub-child clicked');
         // console.log('child clicked');
       });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $('html').click(() => {
+        console.log('HTMl Clicked');
+      });
+      $('body').click(() => {
+        console.log('Body Clicked');
+      });
+      $('.parent').click(() => {
+        $('.parent').css('color', 'red');
+        console.log('Parent Clicked');
+      });
+      $('.child').click(() => {
+        $('.child').css('color', 'blue');
+        console.log('Child Clicked');
+      });
+      $('.sub-child').click(() => {
+        $('.sub-child').css('color', 'brown');
+        console.log('Sub-child Clicked');
+      });
+
+      // Event capturing does not support in jQuery.
     </script>
   </body>
 </html>

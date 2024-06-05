@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-list {
+        padding: 10px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 12px;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-list">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <script>
+      const boxes = document.getElementsByClassName('box');
+      const boxList = document.getElementsByClassName('box-list')[0];
+      boxList.addEventListener('click', (event) => {
+        console.log(event.target);
+
+        console.log('box-list clicked');
+      });
+      //   boxes[0].addEventListener('click', () => {
+      //     console.log('Box 1 clicked');
+      //     boxes[0].style.backgroundColor = 'red';
+      //   });
+      //   boxes[1].addEventListener('click', () => {
+      //     console.log('Box 2 clicked');
+      //     boxes[1].style.backgroundColor = 'brown';
+      //   });
+      //   boxes[2].addEventListener('click', () => {
+      //     console.log('Box 3 clicked');
+      //     boxes[2].style.backgroundColor = 'blue';
+      //   });
+      //   boxes[3].addEventListener('click', () => {
+      //     console.log('Box 4 clicked');
+      //     boxes[3].style.backgroundColor = 'yellow';
+      //   });
+      //   boxes[4].addEventListener('click', () => {
+      //     console.log('Box 5 clicked');
+      //     boxes[4].style.backgroundColor = 'yellowgreen';
+      //   });
+    </script>
+  </body>
+</html>
