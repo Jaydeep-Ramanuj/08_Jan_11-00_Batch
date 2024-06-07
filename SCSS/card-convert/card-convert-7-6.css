@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 300px;
+  margin: 100px auto;
+  border-radius: 12px;
+  color: #8494b6;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 300ms;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card:hover .card-info {
+  background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRyOTVsOGJpaXNvdmJ3MG94Y2o4cXEzYWk2N3Z6a3h6ZDdyMjJkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3ohhwzIw3bISRhQWME/giphy.gif);
+  background-position: center;
+}
+.card .card-info {
+  padding: 10px;
+  padding-top: 20px;
+  background-color: #241b39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  outline: 3px solid #2bbecb;
+  outline-offset: 5px;
+  margin-bottom: 10px;
+  transition: all 300ms;
+  filter: brightness(75%);
+}
+.card img:hover {
+  outline-offset: 10px;
+  filter: brightness(100%);
+}
+.card .name {
+  font-size: 1.8rem;
+}
+.card .name,
+.card .profession,
+.card .city {
+  transition: all 300ms;
+  text-align: center;
+}
+.card .name:hover,
+.card .profession:hover,
+.card .city:hover {
+  color: rgba(245, 245, 245, 0.722);
+}
+.card .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card .btns .msg-btn,
+.card .btns .following-btn {
+  color: rgba(0, 0, 0, 0.846);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.card .btns .msg-btn .msg-btn,
+.card .btns .following-btn .msg-btn {
+  background-color: #2bbecb;
+  border: 2px solid transparent;
+}
+.card .btns .msg-btn .msg-btn:hover,
+.card .btns .following-btn .msg-btn:hover {
+  border: 2px solid #2bbecb;
+  background-color: transparent;
+  color: #2bbecb;
+  transition: all 300ms;
+  box-shadow: rgba(43, 190, 203, 0.7098039216) 0px 1px 10px,
+    rgba(43, 190, 203, 0.7098039216) 0px 3px 20px,
+    rgba(43, 190, 203, 0.7098039216) 0px 5px 30px;
+}
+.card .btns .following-btn {
+  border: 2px solid #2bbecb;
+  color: #2bbecb;
+  transition: all 300ms;
+}
+.card .btns .following-btn:hover {
+  background-color: #2bbecb;
+  border: 2px solid transparent;
+  color: rgba(0, 0, 0, 0.846);
+}
+.card .skills {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  background-color: #211636;
+  padding: 10px;
+}
+.card .skills .skill-pill {
+  border: 1px solid #8494b6;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 0.8rem;
+}
+.card .skills .skill-pill:hover {
+  transform: translateY(-3px);
+  color: whitesmoke;
+  transition: all 300ms;
+  cursor: pointer;
+  box-shadow: rgba(128, 128, 128, 0.502) 0px 10px 60px;
+}
+.card .pro {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background-color: orange;
+  color: white;
+  font-size: 0.8rem;
+} /*# sourceMappingURL=card-convert-7-6.css.map */
