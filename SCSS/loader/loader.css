@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-top: 200px solid #b4f623;
+  border-bottom: 200px solid #b4f623;
+  border-left: 200px solid #666465;
+  border-right: 200px solid #666465;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 300ms;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=loader.css.map */

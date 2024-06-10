@@ -1,0 +1,42 @@
+$primary-color: #b4f623;
+$second-color: #666465;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// @mixin spin-effect($degree: 360deg) {
+// }
+
+@mixin animation-effect(
+  $animationName: spin,
+  $duration: 1000ms,
+  $timingFunction: linear,
+  $iterationCount: infinite,
+  $delay: 300ms
+) {
+  animation-name: $animationName;
+  animation-duration: $duration;
+  animation-timing-function: $timingFunction;
+  animation-iteration-count: $iterationCount;
+  animation-delay: $delay;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-top: 200px solid $primary-color;
+  border-bottom: 200px solid $primary-color;
+  border-left: 200px solid $second-color;
+  border-right: 200px solid $second-color;
+
+  @include animation-effect($animationName: spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
