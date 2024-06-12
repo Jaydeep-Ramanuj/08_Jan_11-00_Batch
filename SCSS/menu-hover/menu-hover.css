@@ -1,0 +1,22 @@
+nav a {
+  text-decoration: none;
+  color: slategray;
+  position: relative;
+  transition: all 300ms;
+}
+nav a:hover {
+  color: black;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(240, 71, 71, 0.41);
+  transition: all 300ms;
+}/*# sourceMappingURL=menu-hover.css.map */

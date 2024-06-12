@@ -1,0 +1,43 @@
+@mixin link-hover-effect($color: rgba(240, 71, 71, 0.41)) {
+  text-decoration: none;
+  color: slategray;
+  position: relative;
+  transition: all 300ms;
+  &:hover {
+    color: black;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  &::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: $color;
+    transition: all 300ms;
+  }
+}
+
+nav {
+  //   a:nth-child(1) {
+  //     @include link-hover-effect(red);
+  //   }
+  //   a:nth-child(2) {
+  //     @include link-hover-effect(yellow);
+  //   }
+  //   a:nth-child(3) {
+  //     @include link-hover-effect(green);
+  //   }
+  //   a:nth-child(4) {
+  //     @include link-hover-effect(blue);
+  //   }
+  //   a:nth-child(5) {
+  //     @include link-hover-effect(pink);
+  //   }
+  a {
+    @include link-hover-effect();
+  }
+}

@@ -1,0 +1,16 @@
+@use 'sass:color';
+$colors: gray, red, blue, yellow, pink, green, brown, aqua, violet, chocolate;
+
+@each $color in $colors {
+  @for $i from 1 through 10 {
+    .bg-#{$color}-#{$i*100} {
+      //   @debug -((10-($i))/10);
+      background-color: color.adjust($color, $alpha: -((10-($i))/10));
+    }
+  }
+  @for $i from 1 through 10 {
+    .text-#{$color}-#{$i*100} {
+      background-color: color.adjust($color, $alpha: -((10-($i))/10));
+    }
+  }
+}

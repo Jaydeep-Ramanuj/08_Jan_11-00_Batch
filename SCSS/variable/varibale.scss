@@ -1,0 +1,36 @@
+$num1: 110;
+$num2: 110;
+$sum: $num1 + $num2;
+$sub: $num1 - $num2;
+$mul: $num1 * $num2;
+$div: $num1 / $num2;
+$modulo: $num1 % $num2;
+
+// @debug $sum;
+// @debug $sub;
+// @debug $mul;
+// @debug $div;
+// @debug $modulo;
+
+@mixin some($width) {
+  @if ($width<=100) {
+    background-color: red;
+  } @else {
+    @error $color;
+  }
+}
+
+@mixin right($offset) {
+  $left: 100% - $offset;
+  @debug $left;
+}
+
+@mixin greet($name) {
+  @debug 'Hello, #{$name}';
+}
+
+.container {
+  //   @include some(150);
+  //   @include right(20%);
+  @include greet('naman');
+}

@@ -1,0 +1,799 @@
+.bg-gray-100 {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.bg-gray-200 {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.bg-gray-300 {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.bg-gray-400 {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.bg-gray-500 {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.bg-gray-600 {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
+.bg-gray-700 {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.bg-gray-800 {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.bg-gray-900 {
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.bg-gray-1000 {
+  background-color: gray;
+}
+
+.text-gray-100 {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.text-gray-200 {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.text-gray-300 {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.text-gray-400 {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.text-gray-500 {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.text-gray-600 {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+
+.text-gray-700 {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.text-gray-800 {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.text-gray-900 {
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.text-gray-1000 {
+  background-color: gray;
+}
+
+.bg-red-100 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.bg-red-200 {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.bg-red-300 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.bg-red-400 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.bg-red-500 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.bg-red-600 {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.bg-red-700 {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.bg-red-800 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.bg-red-900 {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.bg-red-1000 {
+  background-color: red;
+}
+
+.text-red-100 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.text-red-200 {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.text-red-300 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.text-red-400 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.text-red-500 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.text-red-600 {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.text-red-700 {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.text-red-800 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.text-red-900 {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.text-red-1000 {
+  background-color: red;
+}
+
+.bg-blue-100 {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.bg-blue-200 {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.bg-blue-300 {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.bg-blue-400 {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+.bg-blue-500 {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.bg-blue-600 {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+.bg-blue-700 {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.bg-blue-800 {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.bg-blue-900 {
+  background-color: rgba(0, 0, 255, 0.9);
+}
+
+.bg-blue-1000 {
+  background-color: blue;
+}
+
+.text-blue-100 {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.text-blue-200 {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.text-blue-300 {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.text-blue-400 {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+.text-blue-500 {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.text-blue-600 {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+.text-blue-700 {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.text-blue-800 {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.text-blue-900 {
+  background-color: rgba(0, 0, 255, 0.9);
+}
+
+.text-blue-1000 {
+  background-color: blue;
+}
+
+.bg-yellow-100 {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.bg-yellow-200 {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.bg-yellow-300 {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.bg-yellow-400 {
+  background-color: rgba(255, 255, 0, 0.4);
+}
+
+.bg-yellow-500 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.bg-yellow-600 {
+  background-color: rgba(255, 255, 0, 0.6);
+}
+
+.bg-yellow-700 {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+.bg-yellow-800 {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+.bg-yellow-900 {
+  background-color: rgba(255, 255, 0, 0.9);
+}
+
+.bg-yellow-1000 {
+  background-color: yellow;
+}
+
+.text-yellow-100 {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.text-yellow-200 {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.text-yellow-300 {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.text-yellow-400 {
+  background-color: rgba(255, 255, 0, 0.4);
+}
+
+.text-yellow-500 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.text-yellow-600 {
+  background-color: rgba(255, 255, 0, 0.6);
+}
+
+.text-yellow-700 {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+.text-yellow-800 {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+.text-yellow-900 {
+  background-color: rgba(255, 255, 0, 0.9);
+}
+
+.text-yellow-1000 {
+  background-color: yellow;
+}
+
+.bg-pink-100 {
+  background-color: rgba(255, 192, 203, 0.1);
+}
+
+.bg-pink-200 {
+  background-color: rgba(255, 192, 203, 0.2);
+}
+
+.bg-pink-300 {
+  background-color: rgba(255, 192, 203, 0.3);
+}
+
+.bg-pink-400 {
+  background-color: rgba(255, 192, 203, 0.4);
+}
+
+.bg-pink-500 {
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
+.bg-pink-600 {
+  background-color: rgba(255, 192, 203, 0.6);
+}
+
+.bg-pink-700 {
+  background-color: rgba(255, 192, 203, 0.7);
+}
+
+.bg-pink-800 {
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.bg-pink-900 {
+  background-color: rgba(255, 192, 203, 0.9);
+}
+
+.bg-pink-1000 {
+  background-color: pink;
+}
+
+.text-pink-100 {
+  background-color: rgba(255, 192, 203, 0.1);
+}
+
+.text-pink-200 {
+  background-color: rgba(255, 192, 203, 0.2);
+}
+
+.text-pink-300 {
+  background-color: rgba(255, 192, 203, 0.3);
+}
+
+.text-pink-400 {
+  background-color: rgba(255, 192, 203, 0.4);
+}
+
+.text-pink-500 {
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
+.text-pink-600 {
+  background-color: rgba(255, 192, 203, 0.6);
+}
+
+.text-pink-700 {
+  background-color: rgba(255, 192, 203, 0.7);
+}
+
+.text-pink-800 {
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.text-pink-900 {
+  background-color: rgba(255, 192, 203, 0.9);
+}
+
+.text-pink-1000 {
+  background-color: pink;
+}
+
+.bg-green-100 {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.bg-green-200 {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.bg-green-300 {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.bg-green-400 {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+.bg-green-500 {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.bg-green-600 {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.bg-green-700 {
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+.bg-green-800 {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+.bg-green-900 {
+  background-color: rgba(0, 128, 0, 0.9);
+}
+
+.bg-green-1000 {
+  background-color: green;
+}
+
+.text-green-100 {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.text-green-200 {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.text-green-300 {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.text-green-400 {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+.text-green-500 {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.text-green-600 {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.text-green-700 {
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+.text-green-800 {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+.text-green-900 {
+  background-color: rgba(0, 128, 0, 0.9);
+}
+
+.text-green-1000 {
+  background-color: green;
+}
+
+.bg-brown-100 {
+  background-color: rgba(165, 42, 42, 0.1);
+}
+
+.bg-brown-200 {
+  background-color: rgba(165, 42, 42, 0.2);
+}
+
+.bg-brown-300 {
+  background-color: rgba(165, 42, 42, 0.3);
+}
+
+.bg-brown-400 {
+  background-color: rgba(165, 42, 42, 0.4);
+}
+
+.bg-brown-500 {
+  background-color: rgba(165, 42, 42, 0.5);
+}
+
+.bg-brown-600 {
+  background-color: rgba(165, 42, 42, 0.6);
+}
+
+.bg-brown-700 {
+  background-color: rgba(165, 42, 42, 0.7);
+}
+
+.bg-brown-800 {
+  background-color: rgba(165, 42, 42, 0.8);
+}
+
+.bg-brown-900 {
+  background-color: rgba(165, 42, 42, 0.9);
+}
+
+.bg-brown-1000 {
+  background-color: brown;
+}
+
+.text-brown-100 {
+  background-color: rgba(165, 42, 42, 0.1);
+}
+
+.text-brown-200 {
+  background-color: rgba(165, 42, 42, 0.2);
+}
+
+.text-brown-300 {
+  background-color: rgba(165, 42, 42, 0.3);
+}
+
+.text-brown-400 {
+  background-color: rgba(165, 42, 42, 0.4);
+}
+
+.text-brown-500 {
+  background-color: rgba(165, 42, 42, 0.5);
+}
+
+.text-brown-600 {
+  background-color: rgba(165, 42, 42, 0.6);
+}
+
+.text-brown-700 {
+  background-color: rgba(165, 42, 42, 0.7);
+}
+
+.text-brown-800 {
+  background-color: rgba(165, 42, 42, 0.8);
+}
+
+.text-brown-900 {
+  background-color: rgba(165, 42, 42, 0.9);
+}
+
+.text-brown-1000 {
+  background-color: brown;
+}
+
+.bg-aqua-100 {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.bg-aqua-200 {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.bg-aqua-300 {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.bg-aqua-400 {
+  background-color: rgba(0, 255, 255, 0.4);
+}
+
+.bg-aqua-500 {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+.bg-aqua-600 {
+  background-color: rgba(0, 255, 255, 0.6);
+}
+
+.bg-aqua-700 {
+  background-color: rgba(0, 255, 255, 0.7);
+}
+
+.bg-aqua-800 {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+.bg-aqua-900 {
+  background-color: rgba(0, 255, 255, 0.9);
+}
+
+.bg-aqua-1000 {
+  background-color: aqua;
+}
+
+.text-aqua-100 {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.text-aqua-200 {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.text-aqua-300 {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.text-aqua-400 {
+  background-color: rgba(0, 255, 255, 0.4);
+}
+
+.text-aqua-500 {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+.text-aqua-600 {
+  background-color: rgba(0, 255, 255, 0.6);
+}
+
+.text-aqua-700 {
+  background-color: rgba(0, 255, 255, 0.7);
+}
+
+.text-aqua-800 {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+.text-aqua-900 {
+  background-color: rgba(0, 255, 255, 0.9);
+}
+
+.text-aqua-1000 {
+  background-color: aqua;
+}
+
+.bg-violet-100 {
+  background-color: rgba(238, 130, 238, 0.1);
+}
+
+.bg-violet-200 {
+  background-color: rgba(238, 130, 238, 0.2);
+}
+
+.bg-violet-300 {
+  background-color: rgba(238, 130, 238, 0.3);
+}
+
+.bg-violet-400 {
+  background-color: rgba(238, 130, 238, 0.4);
+}
+
+.bg-violet-500 {
+  background-color: rgba(238, 130, 238, 0.5);
+}
+
+.bg-violet-600 {
+  background-color: rgba(238, 130, 238, 0.6);
+}
+
+.bg-violet-700 {
+  background-color: rgba(238, 130, 238, 0.7);
+}
+
+.bg-violet-800 {
+  background-color: rgba(238, 130, 238, 0.8);
+}
+
+.bg-violet-900 {
+  background-color: rgba(238, 130, 238, 0.9);
+}
+
+.bg-violet-1000 {
+  background-color: violet;
+}
+
+.text-violet-100 {
+  background-color: rgba(238, 130, 238, 0.1);
+}
+
+.text-violet-200 {
+  background-color: rgba(238, 130, 238, 0.2);
+}
+
+.text-violet-300 {
+  background-color: rgba(238, 130, 238, 0.3);
+}
+
+.text-violet-400 {
+  background-color: rgba(238, 130, 238, 0.4);
+}
+
+.text-violet-500 {
+  background-color: rgba(238, 130, 238, 0.5);
+}
+
+.text-violet-600 {
+  background-color: rgba(238, 130, 238, 0.6);
+}
+
+.text-violet-700 {
+  background-color: rgba(238, 130, 238, 0.7);
+}
+
+.text-violet-800 {
+  background-color: rgba(238, 130, 238, 0.8);
+}
+
+.text-violet-900 {
+  background-color: rgba(238, 130, 238, 0.9);
+}
+
+.text-violet-1000 {
+  background-color: violet;
+}
+
+.bg-chocolate-100 {
+  background-color: rgba(210, 105, 30, 0.1);
+}
+
+.bg-chocolate-200 {
+  background-color: rgba(210, 105, 30, 0.2);
+}
+
+.bg-chocolate-300 {
+  background-color: rgba(210, 105, 30, 0.3);
+}
+
+.bg-chocolate-400 {
+  background-color: rgba(210, 105, 30, 0.4);
+}
+
+.bg-chocolate-500 {
+  background-color: rgba(210, 105, 30, 0.5);
+}
+
+.bg-chocolate-600 {
+  background-color: rgba(210, 105, 30, 0.6);
+}
+
+.bg-chocolate-700 {
+  background-color: rgba(210, 105, 30, 0.7);
+}
+
+.bg-chocolate-800 {
+  background-color: rgba(210, 105, 30, 0.8);
+}
+
+.bg-chocolate-900 {
+  background-color: rgba(210, 105, 30, 0.9);
+}
+
+.bg-chocolate-1000 {
+  background-color: chocolate;
+}
+
+.text-chocolate-100 {
+  background-color: rgba(210, 105, 30, 0.1);
+}
+
+.text-chocolate-200 {
+  background-color: rgba(210, 105, 30, 0.2);
+}
+
+.text-chocolate-300 {
+  background-color: rgba(210, 105, 30, 0.3);
+}
+
+.text-chocolate-400 {
+  background-color: rgba(210, 105, 30, 0.4);
+}
+
+.text-chocolate-500 {
+  background-color: rgba(210, 105, 30, 0.5);
+}
+
+.text-chocolate-600 {
+  background-color: rgba(210, 105, 30, 0.6);
+}
+
+.text-chocolate-700 {
+  background-color: rgba(210, 105, 30, 0.7);
+}
+
+.text-chocolate-800 {
+  background-color: rgba(210, 105, 30, 0.8);
+}
+
+.text-chocolate-900 {
+  background-color: rgba(210, 105, 30, 0.9);
+}
+
+.text-chocolate-1000 {
+  background-color: chocolate;
+}/*# sourceMappingURL=colors.css.map */
