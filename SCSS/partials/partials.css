@@ -1,0 +1,49 @@
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  13% {
+    filter: hue-rotate(45deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  38% {
+    filter: hue-rotate(135deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  63% {
+    filter: hue-rotate(225deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  88% {
+    filter: hue-rotate(315deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: lightgreen;
+  border-radius: 8px;
+  animation-name: rainbow;
+  animation-duration: 1000ms;
+  animation-timing-function: initial;
+  animation-fill-mode: backward;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-play-state: play;
+}
+
+.temp {
+  height: 462px;
+  width: 462px;
+  border-radius: 8px;
+  background-color: greenyellow;
+}/*# sourceMappingURL=partials.css.map */

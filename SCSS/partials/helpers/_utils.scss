@@ -1,0 +1,63 @@
+@use 'sass:math';
+@mixin animation-shorthand(
+  $name,
+  $duration: 1000ms,
+  $delay: 0ms,
+  $timingFunction: initial,
+  $fillMode: backward,
+  $iterationCount: infinite,
+  $state: play
+) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timingFunction;
+  animation-fill-mode: $fillMode;
+  animation-delay: $delay;
+  animation-iteration-count: $iterationCount;
+  animation-play-state: $state;
+}
+
+@mixin random-box($height: 0, $width: 0, $bora: 8px, $bg: white) {
+  $tempHeight: math.round((math.random() + 1) * 300);
+  $tempWidth: math.round((math.random() + 1) * 300);
+
+  @if ($height==0 && $width==0) {
+    height: $tempHeight + px;
+    width: $tempWidth + px;
+  } @else {
+    height: $height + px;
+    width: $width + px;
+  }
+  border-radius: 8px;
+  background-color: greenyellow;
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  13% {
+    filter: hue-rotate(45deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  38% {
+    filter: hue-rotate(135deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  63% {
+    filter: hue-rotate(225deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  88% {
+    filter: hue-rotate(315deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,0 +1,52 @@
+@mixin rainbow-color-effect(
+  $duration: 1000ms,
+  $delay: 0ms,
+  $timingFunction: initial,
+  $fillMode: backward,
+  $iterationCount: infinite
+) {
+  animation-name: rainbow;
+  animation-duration: $duration;
+  animation-timing-function: $timingFunction;
+  animation-fill-mode: $fillMode;
+  animation-delay: $delay;
+  animation-iteration-count: $iterationCount;
+}
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  margin: 50px auto;
+  background-color: lightseagreen;
+  @include rainbow-color-effect($delay: 300ms);
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  13% {
+    filter: hue-rotate(45deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  38% {
+    filter: hue-rotate(135deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  63% {
+    filter: hue-rotate(225deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  88% {
+    filter: hue-rotate(315deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

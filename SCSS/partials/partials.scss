@@ -1,0 +1,14 @@
+@use 'sass:math';
+@use 'helpers/utils';
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: lightgreen;
+  border-radius: 8px;
+
+  @include utils.animation-shorthand(rainbow);
+}
+
+.temp {
+  @include utils.random-box();
+}

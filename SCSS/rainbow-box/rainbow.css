@@ -1,0 +1,43 @@
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  margin: 50px auto;
+  background-color: lightseagreen;
+  animation-name: rainbow;
+  animation-duration: 1000ms;
+  animation-timing-function: initial;
+  animation-fill-mode: backward;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  13% {
+    filter: hue-rotate(45deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  38% {
+    filter: hue-rotate(135deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  63% {
+    filter: hue-rotate(225deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  88% {
+    filter: hue-rotate(315deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}/*# sourceMappingURL=rainbow.css.map */
