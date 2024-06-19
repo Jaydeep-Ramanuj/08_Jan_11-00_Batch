@@ -1,0 +1,19 @@
+@use 'sass:list';
+
+$colors: gray, red, blue, yellow, pink, green, brown, aqua, violet, chocolate;
+
+@debug $colors;
+
+@debug list.nth($colors, 3);
+
+@each $color in $colors {
+  @debug $color;
+}
+
+.box {
+}
+
+@debug append($colors, black);
+@debug append(10px 12px 16px, 25px);
+@debug $colors;
+@debug list.index($colors, black);

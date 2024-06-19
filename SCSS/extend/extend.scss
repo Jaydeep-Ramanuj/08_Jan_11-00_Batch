@@ -1,0 +1,12 @@
+.box {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: yellowgreen;
+}
+
+.box2 {
+  @extend .box;
+  background-color: tomato;
+}
