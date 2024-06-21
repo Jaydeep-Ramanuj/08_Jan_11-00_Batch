@@ -1,0 +1,6 @@
+// @use 'bourbon';
+@import 'bourbon';
+
+.box {
+  @include size(10em);
+}
