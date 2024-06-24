@@ -98,4 +98,32 @@
   background-color: #5558ea;
   font-size: 14px;
   border-radius: 4px;
+}
+
+.selector {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+  background-color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.selector .options {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.selector .options select {
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  color: #8a99ba;
+}
+.selector .options select option:hover {
+  color: black;
+  background-color: red;
 }/*# sourceMappingURL=common.css.map */

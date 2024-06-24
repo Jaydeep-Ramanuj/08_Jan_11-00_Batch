@@ -1,0 +1,29 @@
+@import 'bourbon/core/bourbon';
+
+.parent {
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+
+  .child {
+    @include size(200px);
+    border-width: 2px;
+    border-style: solid;
+    @include border-color(red blue yellow green);
+    @include padding(10px 30px 60px 100px);
+    background-color: shade(tomato, 30%);
+  }
+
+  #{$all-text-inputs} {
+    outline: none;
+    border: none;
+  }
+}
+
+.temp {
+  margin: 100px;
+  &::before {
+    content: '';
+    @include triangle('up-right', 30px, 30px, blue);
+  }
+}

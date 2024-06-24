@@ -1,0 +1,32 @@
+.parent {
+  height: 300px;
+  width: 300px;
+  background-color: grey;
+}
+.parent .child {
+  height: 200px;
+  width: 200px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red blue yellow green;
+  padding: 10px 30px 60px 100px;
+  background-color: #b34532;
+}
+.parent [type=color], .parent [type=date], .parent [type=datetime], .parent [type=datetime-local], .parent [type=email], .parent [type=month], .parent [type=number], .parent [type=password], .parent [type=search], .parent [type=tel], .parent [type=text], .parent [type=time], .parent [type=url], .parent [type=week], .parent input:not([type]), .parent textarea {
+  outline: none;
+  border: none;
+}
+
+.temp {
+  margin: 100px;
+}
+.temp::before {
+  content: "";
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent blue transparent transparent;
+  border-width: 0 30px 30px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
