@@ -1,0 +1,32 @@
+@mixin card-hover-effect() {
+  transition: all 300ms;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+}
+
+@mixin customFlex(
+  $direction: row,
+  $justifyContent: start,
+  $alignItems: start,
+  $alignContent: normal,
+  $gap: 0px,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  align-content: $alignContent;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
