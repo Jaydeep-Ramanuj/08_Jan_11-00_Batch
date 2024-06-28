@@ -1,0 +1,110 @@
+// Variables with @
+
+@box-bg-color: yellowgreen;
+@inner-box-bg-color: tomato;
+
+// You can use operators too with variables
+
+@box-width: 500px + 200px;
+@inner-box-width: @box-width - 100px;
+
+@other-width:calc (100% - @box-width  );
+
+@name: 'jay';
+
+@breakPoint: ~'(max-width: 600px)';
+
+// Global scope variable
+@opacity: 0.5;
+
+// Mixins, no need to write @mixin here and we can call it just by using (), no need to use @include when calling
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Namespace
+.effects() {
+  .hover() {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 300ms;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+
+  .tilt {
+    transition: all 300ms;
+    &:hover {
+      transform: rotate(20deg);
+    }
+  }
+}
+
+// Maps
+.text-style() {
+  primary-text-color: grey;
+  secondary-text-color: lightgray;
+}
+
+// Nesting as we saw in SCSS
+
+.box {
+  // Local scope variable
+  @opacity: 0.8;
+  height: 500px;
+  //   width: @box-width;
+  width: @other-width;
+  background-color: @box-bg-color;
+  border-radius: 12px;
+  margin: 50px auto;
+
+  //  Use of Map value
+  color: .text-style[primary-text-color];
+  //    Use of namespace
+  .effects.hover();
+  .center();
+  .inner-box {
+    height: 300px;
+    width: @inner-box-width;
+    background-color: @inner-box-bg-color;
+    border-radius: 8px;
+    .effects.tilt();
+  }
+
+  //@ at rules like media query right inside properties
+
+  @media (min-width: 600px) {
+    background-color: blue;
+  }
+
+  // Functions
+
+  @media @breakPoint {
+    background-color: saturate(@box-bg-color, 15%);
+    opacity: percentage(@opacity);
+  }
+
+  @media (min-width: 800px) {
+    background-color: yellowgreen;
+  }
+
+  // @import rule
+
+  @import 'utils.less';
+}
+
+// Single line comment
+
+// jay
+
+// Multi line comment
+
+/*jay
+jay1
+jay2*/
